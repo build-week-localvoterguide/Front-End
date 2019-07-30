@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+/* Color Assignments */
+/* 
+Example Usage: 
+.button {
+    background-color: var(--button-bg-color); 
+*/
+
+:root {
+  --text-color-light: #FFFFFF;
+  --text-color-dark: #575A89;
+
+  --button-bg-color: #3F3D56;
+  --another-color: #83B2DC;
+  --error-msg: #F34A2C;
+  --gradient-purple: #CBBFD2;
+  --gradient-pink: #FBBAAE;
+}
