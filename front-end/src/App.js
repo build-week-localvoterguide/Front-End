@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
-// import FloatingActionButtons from './components/Launch';
+import FloatingActionButtons from './components/Launch';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import Navigation from './components/Navigation';
@@ -17,11 +17,11 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-      {/* <Route
+      <Route
         exact
         path='/'
         render={props => <FloatingActionButtons { ...props } />}
-      /> */}
+      />
       <Route
         path='/login'
         render={ props => <LoginForm { ...props } />}
