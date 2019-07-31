@@ -10,7 +10,6 @@ export default function SignUpForm(props) {
     const handleSubmit = event => {
         event.preventDefault();
         console.log('User', props.user);
-        return props.setTeam([...props.team, props.user]);
     }
 
     return (
@@ -26,7 +25,7 @@ export default function SignUpForm(props) {
                                 name='username'
                                 required
                                 placeholder='Choose a username'
-                                // value={ props.user.username }
+                                value={ props.user.username }
                                 onChange={ changeHandler }
                             />
                         </div>
@@ -41,7 +40,7 @@ export default function SignUpForm(props) {
                                 name='email'
                                 required
                                 placeholder='Enter email'
-                                // value={ props.user.email }
+                                value={ props.user.email }
                                 onChange={ changeHandler }
 
                             />
@@ -57,7 +56,7 @@ export default function SignUpForm(props) {
                                 name='password'
                                 required
                                 placeholder='Choose a password'
-                                // value={ props.user.password }
+                                value={ props.user.password }
                                 onChange={ changeHandler }
                             />
                         </div>
