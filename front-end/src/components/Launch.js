@@ -2,7 +2,7 @@
 import React, { Route } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
-// import Icon from '@material-ui/core/Icon';
+import Icon from '@material-ui/core/Icon';
 import LoginForm from "./LoginForm.js";
 import SignUpForm from "./SignUpForm.js";
 import NavigationIcon from '@material-ui/icons/Navigation';
@@ -22,21 +22,22 @@ const useStyles = makeStyles(theme => ({
 
 
 
-export default function FloatingActionButtons() {
+export default function Launch() {
   const classes = useStyles();
 
   return (
     <div className="choice">
-      <Fab onClick= { () => window.location.href = '/SignUpForm.js'} variant="extended" aria-label="delete" className={classes.fab}>
+      <Fab onClick= {() => window.location.href = '/SignUpForm.js'} variant="extended" aria-label="delete" className={classes.fab}>
         <NavigationIcon className={classes.extendedIcon} />
-        <Route path="/SignUpForm" component={LoginForm} />SIGN UP</Fab>
+        SIGN UP
+      </Fab>
       
 
 
-      {/* <Fab onClick={() => window.location.href = '/LoginForm'} variant="extended" aria-label="delete" className={classes.fab}>
+      <Fab onClick={() => window.location.href = '/LoginForm.js'} variant="extended" aria-label="delete" className={classes.fab}>
         <NavigationIcon className={classes.extendedIcon} />
         LOG IN
-      </Fab> */}
+      </Fab>
     </div>
   );
 }
