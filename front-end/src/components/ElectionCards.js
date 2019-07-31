@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ElectionCard() {
+export default function ElectionCards() {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -56,4 +56,3 @@ export default function ElectionCard() {
   );
 }
     
-}

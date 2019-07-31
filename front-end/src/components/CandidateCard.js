@@ -35,9 +35,6 @@ export default function CandidateCard() {
         </Typography>
         <Typography variant="h5" component="h2">
           be
-          {bull}
-          nev
-          {bull}o{bull}
           lent
         </Typography>
         <Typography className={classes.pos} color="textSecondary">
@@ -54,6 +51,4 @@ export default function CandidateCard() {
       </CardActions>
     </Card>
   );
-}
-    
 }
