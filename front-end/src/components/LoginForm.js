@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function SignUpForm() {
+export default function LoginForm() {
 
 
 
     return (
         <form>
             <fieldset>
-                <legend>Signup</legend>
+                <legend>Login</legend>
                 <div>
                     <label for='username'>
                         Username
@@ -15,24 +15,9 @@ export default function SignUpForm() {
                             <input
                                 type='text'
                                 name='username'
-                                placeholder='Choose a username'
+                                placeholder='Enter your username'
                                 // value={ props.teamMember.username }
                                 // onChange={ changeHandler }
-                            />
-                        </div>
-                    </label>
-                </div>
-                <div>
-                    <label for='email'>
-                        Email Address
-                        <div>
-                            <input
-                                type='email'
-                                name='email'
-                                placeholder='Enter email'
-                                // value={ props.teamMember.email }
-                                // onChange={ changeHandler }
-
                             />
                         </div>
                     </label>
@@ -44,7 +29,7 @@ export default function SignUpForm() {
                             <input
                                 type='text'
                                 name='password'
-                                placeholder='Enter password'
+                                placeholder='Password'
                                 // value={ props.teamMember.role }
                                 // onChange={ changeHandler }
                             />
