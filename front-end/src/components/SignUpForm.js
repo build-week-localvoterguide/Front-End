@@ -8,7 +8,7 @@ import { red } from '@material-ui/core/colors';
 const useStyles = makeStyles(theme => ({
     fab: {
       margin: theme.spacing(1),
-      backgroundColor: "#3f51b5"
+      backgroundColor: "#3f51b5",
       
     },
     extendedIcon: {
@@ -25,7 +25,7 @@ export default function SignUpForm() {
         <form className="choice">
             <fieldset className={classes.fab}>
                 <div>
-                    <label for='username'>
+                    <label for='username' style={{color:'white'}}>
                         Please choose a Username
                         <div>
                             <input
@@ -40,7 +40,7 @@ export default function SignUpForm() {
                     </label>
                 </div>
                 <div>
-                    <label for='email'>
+                    <label for='email' style={{color:'white'}}>
                         Email Address
                         <div>
                             <input
@@ -56,7 +56,7 @@ export default function SignUpForm() {
                     </label>
                 </div>
                 <div>
-                    <label for='role'>
+                    <label for='role' style={{color:'white'}}>
                         Password
                         <div>
                             <input

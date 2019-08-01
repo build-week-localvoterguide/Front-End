@@ -24,7 +24,7 @@ export default function LoginForm() {
         <form className="choice">
             <fieldset className={classes.fab}>
                 <div>
-                    <label for='username'>
+                    <label for='username' style={{color:'white'}}>
                         Username
                         <div>
                             <input
@@ -39,7 +39,7 @@ export default function LoginForm() {
                     </label>
                 </div>
                 <div>
-                    <label for='role'>
+                    <label for='role' style={{color:'white'}}>
                         Password
                         <div>
                             <input

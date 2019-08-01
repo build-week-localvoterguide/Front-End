@@ -27,7 +27,7 @@ export default function Launch() {
 
   return (
     <div className="choice">
-      <Fab onClick= {() => window.location.href = '/SignUpForm.js'} variant="extended" aria-label="delete" className={classes.fab}>
+      <Fab onClick= {() => window.location.href = '/SignUpForm.js'} variant="extended" aria-label="delete" style={{color:'white'}} className={classes.fab}>
         <NavigationIcon className={classes.extendedIcon} />
         SIGN UP
       </Fab>
