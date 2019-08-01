@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as Logo } from '../';
-import Fab from '@material-ui/core/Fab';
+// import Fab from '@material-ui/core/Fab';
 import { red } from '@material-ui/core/colors';
 
 
@@ -23,12 +23,10 @@ export default function SignUpForm() {
 
     return (
         <form className="choice">
-            
             <fieldset className={classes.fab}>
-                <legend></legend>
                 <div>
                     <label for='username'>
-                        Username
+                        Please choose a Username
                         <div>
                             <input
                                 className='field'
@@ -79,3 +77,5 @@ export default function SignUpForm() {
         </form>
     )
 }
+            
+                
