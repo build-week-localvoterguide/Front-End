@@ -5,21 +5,20 @@ import './App.css';
 import LoginForm from './components/LoginForm';
 import SignUpForm from './components/SignUpForm';
 import Navigation from './components/Navigation';
-import ElectionCards from './components/ElectionCards';
-import CandidateCard from './components/CandidateCard';
+import AllCandidates from './components/AllCandidates';
+import Candidate from './components/Candidate';
 import 'typeface-roboto';
 
 function App() {
 
   const [user, setUser] = useState({ username: '', email: '', password: '' });
 
-  // const [team, setTeam] = useState([{ username: 'Penny', email: 'pmtague9@gmail.com', password: 'admin' }]);
   return (
     <div className="App">
       <Navigation />
       {/* <Route
         exact
-        path='/'
+        path='/'w
         render={props => <FloatingActionButtons { ...props } />}
       /> */}
       <Route
@@ -36,11 +35,11 @@ function App() {
       /> */}
       <Route
         path='/candidates'
-        render={ props => <ElectionCards { ...props } />}
+        render={ props => <AllCandidates { ...props } />}
       />
       <Route
-        path='/candidate'
-        render={ props => <CandidateCard { ...props } />}
+        path='/candidates/:name'
+        render={ props => <Candidate { ...props } />}
       />
     </div>
   );

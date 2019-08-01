@@ -25,11 +25,11 @@ const useStyles = makeStyles({
   },
 });
 
-export default function CandidateCard(props) {
+export default function CandidateCardExpanded(props) {
   const classes = useStyles();
     console.log(props)
 //   const { candidate_name, state, party, email, phone_number } = props.candidate;
-//   const { name, state, party, email, phone_number } = props.candidate;
+  const { name, state, party, email, phone_number } = props.candidate;
 
   return (
     <Card className={classes.card}>
@@ -57,11 +57,13 @@ export default function CandidateCard(props) {
           {/* { props.candidate.phone_number } */}
           { props.candidate.gender }
           {/* 858-555-1212 */}
+          <br />
+          { }
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">
-            <Link to={ `/candidates/${props.candidate.id}` }>More Info</Link>
+            <Link to={ `/candidates/${props.candidate.name}` }>More Info</Link>
         </Button>
       </CardActions>
     </Card>
