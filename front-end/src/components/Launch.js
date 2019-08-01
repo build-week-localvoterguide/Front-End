@@ -13,7 +13,6 @@ const useStyles = makeStyles(theme => ({
   fab: {
     margin: theme.spacing(1),
     backgroundColor: "#3f51b5"
-    
   },
   extendedIcon: {
     marginRight: theme.spacing(1),
@@ -34,7 +33,7 @@ export default function Launch() {
       
 
 
-      <Fab onClick={() => window.location.href = '/LoginForm.js'} variant="extended" aria-label="delete" className={classes.fab}>
+      <Fab onClick={() => window.location.href = '/LoginForm.js'} variant="extended" aria-label="delete" style={{color:'white'}} className={classes.fab}>
         <NavigationIcon className={classes.extendedIcon} />
         LOG IN
       </Fab>

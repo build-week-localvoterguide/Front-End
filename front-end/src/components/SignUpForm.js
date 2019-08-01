@@ -1,7 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { ReactComponent as Logo } from '../';
-import { votelogo } from '../logo/votelogo.svg';
 import { red } from '@material-ui/core/colors';
 
 
@@ -23,7 +21,7 @@ export default function SignUpForm() {
 
     return (
         <form className="choice">
-            <img src={votelogo} alt="Logo" />
+            {/* <img src="../../public/votelogo.svg" alt="Logo" /> */}
             <fieldset className={classes.fab}>
                 <div>
                     <label for='username' style={{color:'white'}}>
