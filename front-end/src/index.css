@@ -11,14 +11,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.choice {
-  display: flex;
-  flex-direction: column;
-  margin: 3rem auto auto auto;
-  padding: 5rem;
-  height: 8rem;
-  border-bottom: 2px solid grey;
-  background-color: red;
-}
  

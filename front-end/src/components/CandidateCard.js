@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import Candidate from './Candidate.js';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
@@ -27,10 +28,11 @@ const useStyles = makeStyles({
 
 export default function CandidateCard(props) {
   const classes = useStyles();
-    console.log(props)
+    console.log('Candidate Card', props)
 //   const { candidate_name, state, party, email, phone_number } = props.candidate;
 //   const { name, state, party, email, phone_number } = props.candidate;
 
+    const name = props.candidate.name;
   return (
     <Card className={classes.card}>
       <CardContent>
@@ -61,7 +63,7 @@ export default function CandidateCard(props) {
       </CardContent>
       <CardActions>
         <Button size="small">
-            <Link to={ `/candidates/${props.candidate.id}` }>More Info</Link>
+            <Link to={ `/candidates/${name}` }>More Info</Link>
         </Button>
       </CardActions>
     </Card>

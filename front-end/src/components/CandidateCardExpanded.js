@@ -26,10 +26,11 @@ const useStyles = makeStyles({
 });
 
 export default function CandidateCardExpanded(props) {
+    // const { name, birth_year, height, mass, gender } = props.candidate
   const classes = useStyles();
-    console.log(props)
+    console.log('Expanded Card', props)
 //   const { candidate_name, state, party, email, phone_number } = props.candidate;
-  const { name, state, party, email, phone_number } = props.candidate;
+//   const { name, state, party, email, phone_number } = props.candidate;
 
   return (
     <Card className={classes.card}>
@@ -58,14 +59,8 @@ export default function CandidateCardExpanded(props) {
           { props.candidate.gender }
           {/* 858-555-1212 */}
           <br />
-          { }
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">
-            <Link to={ `/candidates/${props.candidate.name}` }>More Info</Link>
-        </Button>
-      </CardActions>
     </Card>
   );
 }

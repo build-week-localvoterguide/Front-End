@@ -1,29 +1,34 @@
 import React, { useState, useEffect } from 'react';
+import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CandidateCardExpanded from './CandidateCardExpanded';
 import axios from 'axios';
 
 const Candidate = (props) => {
-    const [candidate, setCandidate] = useState();
+    const [candidate, setCandidate] = useState({});
+
+    console.log('Candidate', props)
 
     useEffect(() => {
         const name = props.match.params.name;
-        console.log(props.match.params.name)
+        console.log('Name', name)
         axios
-            .get(`https://swapi.co/api/people/${name}`)
+            .get(`https://swapi.co/api/people/?search=${ name }`)
 
             .then(res => {
-                setCandidate(res.data.results);
+                console.log('Candidate Data', res)
+                setCandidate(res.data.results[0]);
+                
             })
 
             .catch(err => {
                 console.error(err);
             })
-    }, [props.match.params.name]);
-
+    }, []);
+console.log('New Candidate', candidate)
     return (
         <div>
-            <CandidateCardExpanded />
+            <CandidateCardExpanded candidate={ candidate }/>
             <Link to='/candidates' className='back-button'>Back to Candidates</Link>
         </div>
     )
