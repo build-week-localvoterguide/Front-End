@@ -8,12 +8,13 @@ import CandidateCard from './components/CandidateCard';
 import ElectionCards from './components/ElectionCards';
 import 'typeface-roboto';
 
+
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Launch />
-      <LoginForm /> */}
+      <LoginForm />
       <SignUpForm />
       {/* <CandidateCard />
       <ElectionCards /> */}

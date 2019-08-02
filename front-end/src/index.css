@@ -23,6 +23,23 @@ code {
   font-size: 2em;
 }
 
+@media screen and (max-width: 800px){
+  .choice {
+    padding: 3px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .choice {
+    padding: 0px;
+    display: flex;
+    font-size: 1rem;
+  }
+}
+
+
+
 .Logo {
   background-image: url(/front-end/public/Logo3.svg);
   max-height: 3rem;
