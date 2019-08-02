@@ -9,7 +9,7 @@ export default function LoginForm() {
             <fieldset>
                 <legend>Login</legend>
                 <div>
-                    <label for='username'>
+                    <label htmlFor='username'>
                         Username
                         <div>
                             <input
@@ -23,7 +23,7 @@ export default function LoginForm() {
                     </label>
                 </div>
                 <div>
-                    <label for='role'>
+                    <label htmlFor='password'>
                         Password
                         <div>
                             <input
