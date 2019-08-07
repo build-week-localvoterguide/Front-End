@@ -13,6 +13,8 @@ function App() {
 
   const [user, setUser] = useState({ username: '', email: '', password: '' });
 
+  
+
   return (
     <div className="App">
       <Navigation />
